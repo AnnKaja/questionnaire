@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Personality Survey</title>
+		<link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/bpg-arial/css/bpg-arial.min.css" />
+		<link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/bpg-square/css/bpg-square.min.css" />
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main>
+			<form class="form" id="surveyForm" action="#" method="post">
+				<!-- Name field -->
+				<h1 class="form__title">აირჩიეთ დებულება</h1>
+				<!-- Questions 1-30 (from your file). data-marker set, markers are not shown in text. -->
+				<div class="form__item">
+					<h3 class="form__subtitle">1</h3>
+					<div class="form__options options-form">
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-1" value="a" data-marker="T" required />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">მე ძირითადად ადამიანებს ვეუბნები იმას, რასაც ვფიქრობ.</span>
+						</label>
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-1" value="b" data-marker="A" />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">მე ჩემს აზრებს არავის ვუზიარებ.</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__item">
+					<h3 class="form__subtitle">2</h3>
+					<div class="form__options options-form">
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-2" value="a" data-marker="C" required />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">სხვებთან ურთიერთობაში მშვიდი და ფრთხილი ვარ.</span>
+						</label>
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-2" value="b" data-marker="E" />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">სხვებთან ურთიერთობაში თბილი და მეგობრული ვარ.</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__item">
+					<h3 class="form__subtitle">3</h3>
+					<div class="form__options options-form">
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-3" value="a" data-marker="E" required />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ემოციების წარმოჩენის ჩვევა მაქვს სხვების წინშე.</span>
+						</label>
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-3" value="b" data-marker="C" />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ჩვევად მაქვს, ჩემი ემოციების დამალვა.</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__item">
+					<h3 class="form__subtitle">4</h3>
+					<div class="form__options options-form">
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-4" value="a" data-marker="T" required />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">თავს სწრაფ ადამიანად მივიჩნევ.</span>
+						</label>
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-4" value="b" data-marker="A" />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">თავს ნელ ადამიანად მივიჩნევ.</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__item">
+					<h3 class="form__subtitle">5</h3>
+					<div class="form__options options-form">
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-5" value="a" data-marker="T" required />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ვთვლი, რომ უმეტესობა სიტუაციაში შემიძლია რისკზე წასვლა.</span>
+						</label>
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-5" value="b" data-marker="A" />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ვთვლი, რომ ვარ ისეთი ადამიანი, რომელიც თავს არიდებს ან ამცირებს რისკს ხშირ შემთხვევაში.</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__item">
+					<h3 class="form__subtitle">6</h3>
+					<div class="form__options options-form">
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-6" value="a" data-marker="E" required />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">თავს მხიარულ და ხალისინ ადამიანად მივიჩნევ.</span>
+						</label>
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-6" value="b" data-marker="C" />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">თავს სერიოზულ და დაფიქრებულ ადამიანად მივიჩნევ.</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__item">
+					<h3 class="form__subtitle">7</h3>
+					<div class="form__options options-form">
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-7" value="a" data-marker="A" required />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ჩვევად მაქვს დაველოდო სხვა როდის შემოვა ჩემთან კონტაქტში.</span>
+						</label>
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-7" value="b" data-marker="T" />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ჩვევად მაქვს თავად ვიყო ურთიერთობის ინიციატორი.</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__item">
+					<h3 class="form__subtitle">8</h3>
+					<div class="form__options options-form">
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-8" value="a" data-marker="E" required />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">საუბრისას ძირითადათ ვეყრდნობი შეხედულებებს და მოსაზრებებს.</span>
+						</label>
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-8" value="b" data-marker="C" />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">საუბრისას ძირითადად ვეყრდნობი ფაქტებს.</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__item">
+					<h3 class="form__subtitle">9</h3>
+					<div class="form__options options-form">
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-9" value="a" data-marker="E" required />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ძირითათად მსიამივნებს სხვებთან ერთად მუშაობა.</span>
+						</label>
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-9" value="b" data-marker="C" />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ძირითადათ ვამჯობინებ მარტო მუშაობას.</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__item">
+					<h3 class="form__subtitle">10</h3>
+					<div class="form__options options-form">
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-10" value="a" data-marker="T" required />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ვამჯობინებ რომ თავად ვაკონტროლო სიტუაცია.</span>
+						</label>
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-10" value="b" data-marker="A" />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ვამჯობინებ ჩრდილში ყოფნას.</span>
+						</label>
+					</div>
+				</div>
+
+				<!-- 11-20 -->
+				<div class="form__item">
+					<h3 class="form__subtitle">11</h3>
+					<div class="form__options options-form">
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-11" value="a" data-marker="T" required />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ვთვლი, რომ ვარ პირდაპირი და კომუნიკაბელური.</span>
+						</label>
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-11" value="b" data-marker="A" />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ვთვლი, რომ ვარ წყნარი და თავშეკავებული.</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__item">
+					<h3 class="form__subtitle">12</h3>
+					<div class="form__options options-form">
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-12" value="a" data-marker="T" required />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ძირითადად ყურადღებას ვამახვილებ შედეგზე.</span>
+						</label>
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-12" value="b" data-marker="A" />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ძირითადად ყურადღებას ვამახვილებ პროცესზე ან მეთოდზე.</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__item">
+					<h3 class="form__subtitle">13</h3>
+					<div class="form__options options-form">
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-13" value="a" data-marker="E" required />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">მე უფრო მაინტერესებს თუ როგორ გრძნობენ ადამიანები თავს.</span>
+						</label>
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-13" value="b" data-marker="C" />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">მე უფრო მაინტერესებს თუ რას ფიქრობენ ადამიანები.</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__item">
+					<h3 class="form__subtitle">14</h3>
+					<div class="form__options options-form">
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-14" value="a" data-marker="E" required />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">სხვებთან ურთიერთობაში ვარ უფრო უშუალო და არაფორმალური.</span>
+						</label>
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-14" value="b" data-marker="C" />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">სხვებთან ურთიერთობაში ვარ უფრო საქმიანი და ფორმალური.</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__item">
+					<h3 class="form__subtitle">15</h3>
+					<div class="form__options options-form">
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-15" value="a" data-marker="C" required />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ძირითადად თავს ვარიდებ ადამიანებთან პიროვნულ დონეზე ურთიერთობაში.</span>
+						</label>
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-15" value="b" data-marker="E" />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ადამიანებთან ძირითადათ მაქვს ახლო, პირადი ურთიერთობები.</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__item">
+					<h3 class="form__subtitle">16</h3>
+					<div class="form__options options-form">
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-16" value="a" data-marker="T" required />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ძირითადათ ვებრძვი კონფლიქტურ სიტუაციებს.</span>
+						</label>
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-16" value="b" data-marker="A" />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ნეიტრალურად ვცდილობ თავი ავარიდო კონფლიქტურ სიტუაციებს და დაპირისპირებებს.</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__item">
+					<h3 class="form__subtitle">17</h3>
+					<div class="form__options options-form">
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-17" value="a" data-marker="T" required />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">სხვებთან ხშირდ მოთმინებას ვკარგავ.</span>
+						</label>
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-17" value="b" data-marker="A" />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ვთვლი, რომ სხვებთან ურთიერთობაში ვარ მომთმენი.</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__item">
+					<h3 class="form__subtitle">18</h3>
+					<div class="form__options options-form">
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-18" value="a" data-marker="E" required />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ზოგადად, ადამიანებთან მაქვს აქტიური და ხშირი კონტაქთი.</span>
+						</label>
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-18" value="b" data-marker="C" />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ზოგადად, ადამიანებთან მაქვს შეზღუდული კონტაქტი.</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__item">
+					<h3 class="form__subtitle">19</h3>
+					<div class="form__options options-form">
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-19" value="a" data-marker="C" required />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">მე ძირითადად სამუშაოზე/მიზანზე ორიენტირებული ვარ.</span>
+						</label>
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-19" value="b" data-marker="E" />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">მე ძირითადად ურთიერთობებზე ორიენტირებული ვარ.</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__item">
+					<h3 class="form__subtitle">20</h3>
+					<div class="form__options options-form">
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-20" value="a" data-marker="C" required />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">მე ძირითადად განზე ვდგევარ და ზემოდან ვუყურებ სხვებს.</span>
+						</label>
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-20" value="b" data-marker="E" />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ძირითადად ადამიანებთან ვარ გახსნილი და გულღია.</span>
+						</label>
+					</div>
+				</div>
+
+				<!-- 21-30 -->
+				<div class="form__item">
+					<h3 class="form__subtitle">21</h3>
+					<div class="form__options options-form">
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-21" value="a" data-marker="T" required />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ვთვლი, რომ ვარ კონკურენტული.</span>
+						</label>
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-21" value="b" data-marker="A" />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ვთვლი, რომ სხვებთან ურთიერთობაში ვარ თანამშრომლობის მომხრე.</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__item">
+					<h3 class="form__subtitle">22</h3>
+					<div class="form__options options-form">
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-22" value="a" data-marker="A" required />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ვთვლი, რომ სხვებთან ურთიერთობაში ვარ უფრო თავშეკავებული.</span>
+						</label>
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-22" value="b" data-marker="T" />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ვთვლი, რომ სხვებთან ურთიერთობაში ვარ უფრო გავლენიანი.</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__item">
+					<h3 class="form__subtitle">23</h3>
+					<div class="form__options options-form">
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-23" value="a" data-marker="C" required />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ძირითადათ სხვათა გრძნობების მიმართ ვარ უფრო ინდეფერენტული.</span>
+						</label>
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-23" value="b" data-marker="E" />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ძირითადათ სხვათა გრძნობების მიმართ ვიჩენ ინტერეს.</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__item">
+					<h3 class="form__subtitle">24</h3>
+					<div class="form__options options-form">
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-24" value="a" data-marker="T" required />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ძირითადად გადაწყვეტილებას სწრაფად ვიღებ.</span>
+						</label>
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-24" value="b" data-marker="A" />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ძირითადად გადაწყვეტილების მიღებას დიდ დროს ვანდომებ.</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__item">
+					<h3 class="form__subtitle">25</h3>
+					<div class="form__options options-form">
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-25" value="a" data-marker="E" required />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">საკუთარ თავს ვთვლი მშვიდ და მომთმენ ადამიანად.</span>
+						</label>
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-25" value="b" data-marker="C" />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">საკუთარ თავს ვთვლი როგორც საკუთარი თავის, ასევე სხვების მიმართ მომთხოვნ ადამიანად.</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__item">
+					<h3 class="form__subtitle">26</h3>
+					<div class="form__options options-form">
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-26" value="a" data-marker="A" required />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ძირითადათ, სხვებს მივყვები.</span>
+						</label>
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-26" value="b" data-marker="T" />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ძირითადათ, მე ვაძლევ მიმართულებას სხვათა ქმედებებს.</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__item">
+					<h3 class="form__subtitle">27</h3>
+					<div class="form__options options-form">
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-27" value="a" data-marker="C" required />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">კომუნიკაციის დროს ვარ ფრთხილი და მოზომილი.</span>
+						</label>
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-27" value="b" data-marker="E" />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">კომუნიკაციის დროს ვარ იმპულსური და ემოციური.</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__item">
+					<h3 class="form__subtitle">28</h3>
+					<div class="form__options options-form">
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-28" value="a" data-marker="A" required />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ძირითადათ, ჩემს შეხედულებებს ჩემთვის ვინახავ.</span>
+						</label>
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-28" value="b" data-marker="T" />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ძირითადათ, ჩემს იდეებს და შეხედულებებს ვუზიარებ ყველას.</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__item">
+					<h3 class="form__subtitle">29</h3>
+					<div class="form__options options-form">
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-29" value="a" data-marker="T" required />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">სხვებთან ერთად მუშაობისას ვცდილობ, საქმე „ჩემებურად“ გავაკეთო.</span>
+						</label>
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-29" value="b" data-marker="A" />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">სხვებთან ერთად მუშაობისას ვცდილობ გავითვალისწინო მათი აზრები.</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="form__item">
+					<h3 class="form__subtitle">30</h3>
+					<div class="form__options options-form">
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-30" value="a" data-marker="E" required />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ძირითადად ჩემს პირად გრძნობებს ვუზიარებ სხვებს.</span>
+						</label>
+						<label class="options-form__label">
+							<input class="options-form__radio" type="radio" name="rd-30" value="b" data-marker="C" />
+							<span class="options-form__style-radio"></span>
+							<span class="options-form__text">ძირითადად არავის ვახედებ ჩემს პირად გრძნობებში.</span>
+						</label>
+					</div>
+				</div>
+				<button type="submit" class="submit-btn">Submit</button>
+			</form>
+		</main>
+		<script src="script.js"></script>
+	</body>
+</html>
